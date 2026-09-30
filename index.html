@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glen Zhu – Computer Engineering Student</title>
+<meta name="description" content="Portfolio of Glen Zhu, Computer Engineering student at UBC. Software and firmware development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="barrow">
+    <a class="brand" href="index.html">
+      <span class="mark">GZ</span>
+      <span class="full">Glen Zhu</span>
+    </a>
+    <nav class="primary">
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul id="navList">
+        <li><a class="navlink active" href="index.html">Home</a></li>
+        <li><a class="navlink" href="projects.html">Projects</a></li>
+      </ul>
+      <a class="btn ghost" href="mailto:glen.zhu@outlook.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Computer Engineering @ UBC</div>
+    <h1 class="display">Building at the edge of hardware and software.</h1>
+    <p class="subline">I'm Glen, a 4th-year Computer Engineering student with 16 months of experience across hardware validation and embedded firmware. Right now I'm also building an autonomous racing robot and a mobile inventory app on the side.</p>
+    <div class="hero-links">
+      <a class="btn solid" href="projects.html">View my projects</a>
+      <a class="btn ghost" href="mailto:glen.zhu@outlook.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section id="profile">
+    <div class="section-head"><h2>Profile</h2></div>
+    <p class="lede">I like working close to the hardware, but I'm just as happy building the software layer on top of it.</p>
+    <div class="spec">
+      <div class="spec-row"><span class="k">Role</span><span class="v">Software &amp; firmware engineering</span></div>
+      <div class="spec-row"><span class="k">Education</span><span class="v">BASc Computer Engineering, UBC (2022–2027)</span></div>
+      <div class="spec-row"><span class="k">Experience</span><span class="v">16 months, Microchip Technology and LED Smart</span></div>
+      <div class="spec-row"><span class="k">Building</span><span class="v">CardSheet, and a ROS2-based autonomous racing robot</span></div>
+      <div class="spec-row"><span class="k">Availability</span><span class="v">Co-op, Summer 2026 onward</span></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head"><h2>Experience</h2></div>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-when">Jan 2025 – Aug 2025</div>
+        <div>
+          <h3>Microchip Technology</h3>
+          <div class="job-role">Validation Engineer Intern</div>
+          <ul>
+            <li>Ran full PCIe regression testing across multiple platforms, reaching 100% coverage.</li>
+            <li>Refactored Tcl-based test automation, cutting manual verification time by 25%.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-when">May 2024 – Dec 2024</div>
+        <div>
+          <h3>LED Smart</h3>
+          <div class="job-role">Firmware Engineer Intern</div>
+          <ul>
+            <li>Built and load-tested a 100+ node Thread network over Bluetooth.</li>
+            <li>Designed a 50+ command protocol for sensor data over BLE and UART, in C/C++ on Zephyr RTOS.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><h2>Skills</h2></div>
+    <div class="skills-panel">
+      <div class="skill-row">
+        <h3>Languages</h3>
+        <p>C, C++, Python, Java, Kotlin, TypeScript, SystemVerilog/Verilog, ARM Assembly, Tcl, SQL</p>
+      </div>
+      <div class="skill-row">
+        <h3>Embedded &amp; hardware</h3>
+        <p>Zephyr RTOS, ROS2, Quartus Prime, ModelSim, Segger, MATLAB, FPGA (DE1-SoC)</p>
+      </div>
+      <div class="skill-row">
+        <h3>Tools &amp; platforms</h3>
+        <p>Git, VS Code, IntelliJ IDEA, React / React Native, Supabase, Docker, Google Cloud Platform, Linux / UNIX</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Let's talk.</h2>
+      <p>I'm looking for a software or firmware co-op for Summer 2026.</p>
+      <div class="contact-links">
+        <a class="btn solid" href="mailto:glen.zhu@outlook.com">glen.zhu@outlook.com</a>
+        <a class="btn ghost" href="https://linkedin.com/in/glen-zhu" target="_blank" rel="noopener">linkedin.com/in/glen-zhu</a>
+      </div>
+    </div>
+    <p class="foot-note">Built by Glen Zhu.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

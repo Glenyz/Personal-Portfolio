@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects – Glen Zhu</title>
+<meta name="description" content="Projects by Glen Zhu: an autonomous racing robot, a Pokémon inventory app, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="barrow">
+    <a class="brand" href="index.html">
+      <span class="mark">GZ</span>
+      <span class="full">Glen Zhu</span>
+    </a>
+    <nav class="primary">
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul id="navList">
+        <li><a class="navlink" href="index.html">Home</a></li>
+        <li><a class="navlink active" href="projects.html">Projects</a></li>
+      </ul>
+      <a class="btn ghost" href="mailto:glen.zhu@outlook.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Selected work</div>
+    <h1 class="display" style="font-size: clamp(2.2rem, 4.2vw, 3rem);">Projects</h1>
+    <p class="subline">A mix of team projects, coursework, and things I build on the side.</p>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section style="border-top: none; padding-top: 0;">
+    <div class="proj-grid">
+
+      <div class="project">
+        <div class="project-top">
+          <h3>Autonomous racing robot</h3>
+          <span class="status">in progress</span>
+        </div>
+        <div class="stack">ROS2, reinforcement learning, LiDAR</div>
+        <p class="desc">A team project building a GPU-accelerated robot that races through an unpredictable track while avoiding obstacles, using LiDAR and camera input.</p>
+        <ul class="highlights">
+          <li>Own the ML side: designing the reward function and training pipeline for the reinforcement learning agent</li>
+          <li>Integrating LiDAR and camera input for real-time obstacle avoidance</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <h3>CardSheet</h3>
+          <span class="status">in progress</span>
+        </div>
+        <div class="stack">React Native, Expo, Supabase</div>
+        <p class="desc">An inventory manager for independent Pokémon card vendors, where every balance is recomputed from transaction history rather than stored as a running total.</p>
+        <ul class="highlights">
+          <li>Event-sourced architecture: transactions are the single source of truth</li>
+          <li>Specific-identification cost accounting, since every card is a unique physical item</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="more-label">More</div>
+
+    <div class="proj-grid compact">
+      <div class="project">
+        <div class="project-top"><h3>CPEN 321 course project</h3></div>
+        <div class="stack">Kotlin, Jetpack Compose, TypeScript, Google Cloud</div>
+        <p class="desc">A native Android app with a TypeScript backend deployed on a Google Cloud VM, communicating over HTTPS.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-top"><h3>Simple CPU</h3></div>
+        <div class="stack">Verilog, Quartus, ModelSim</div>
+        <p class="desc">A modular CPU built in Verilog and verified on a DE1-SoC FPGA board, to 99% functional accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Let's talk.</h2>
+      <p>I'm looking for a software or firmware co-op for Summer 2026.</p>
+      <div class="contact-links">
+        <a class="btn solid" href="mailto:glen.zhu@outlook.com">glen.zhu@outlook.com</a>
+        <a class="btn ghost" href="https://linkedin.com/in/glen-zhu" target="_blank" rel="noopener">linkedin.com/in/glen-zhu</a>
+      </div>
+    </div>
+    <p class="foot-note">Built by Glen Zhu.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
